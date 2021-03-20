@@ -7,7 +7,7 @@ const request=require('request')
 dotenv.config()
 const movieRouter = express.Router();
 
-movieRouter.use(bodyParser.json());
+movieRouter.use(express.json());
 dotenv.config()
 
 movieRouter.route('/')
